@@ -14,17 +14,18 @@ public class GameStatus : MonoBehaviour
     private void Start()
     {
         scoreText.text = currentScore.ToString();
+        Time.timeScale = 0.5f;
     }    
     //void Start()
-    //{
-        
+   // {
     //}
 
     // Update is called once per frame
-    void Update()
+   /* void Update()
     {
         Time.timeScale = gameSpeed;
-    }
+      
+    }*/
     public void AddToScore()
     {
         currentScore += PointsPerBlocksDestroyed;
